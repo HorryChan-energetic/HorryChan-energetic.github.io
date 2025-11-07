@@ -7,8 +7,26 @@
   <style>
     body { font-family: "Inter", sans-serif; margin: 0; padding: 0; color: #333; }
     header { background: #1E2A3A; color: white; padding: 20px 40px; text-align: center}
-    .hero { padding: 80px 40px; background: #F8F8F8; }
-    .hero h1 { margin: 0; font-size: 40px; }
+    .hero { 
+        padding: 80px 40px; 
+        background: 
+        linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), /* 深色遮罩，让文字更清晰 */
+        url('images/hero_img.png'); /* 背景图片路径 */
+        background-size: cover;          /* 覆盖整个区域 */
+        background-position: center;     /* 图片居中 */
+        background-repeat: no-repeat;    /* 不重复 */
+        color: white;                    /* 文字改为白色 */
+        text-align: center;
+	}
+    .hero h1 { 
+        margin: 0; 
+        font-size: 40px; 
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* 文字阴影，增强可读性 */
+    }
+    .hero p {
+        text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+        font-size: 1.2rem;
+    }
     .section { padding: 40px; }
     .card { background: white; padding: 20px; margin-bottom: 20px; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
     footer { text-align: center; padding: 20px; background: #F0F0F0; }
